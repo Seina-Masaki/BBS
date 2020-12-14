@@ -173,9 +173,9 @@
     $stmt = $pdo -> query($sql);
     $results = $stmt -> fetchAll();
     foreach($results as $row) {
-        echo $row['id'].',';
-        echo $row['name'].',';
-        echo $row['comment'].'<br>';
+        echo "－".$row['id']."－".'<br>';
+        echo "名前　　　：".$row['name'].'<br>';
+        echo "コメント　：".$row['comment'].'<br>';
         echo "<hr>";
     }
     ?>
